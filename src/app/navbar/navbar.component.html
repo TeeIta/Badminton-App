@@ -1,0 +1,22 @@
+     <!-- nav buttons  -->
+     <div class="main_btn">
+        <img src="/assets/ABCIN.png" style="width: 60px;">
+        <button class="btn"><i class="fa fa-home"></i></button>
+        <button class="btn btn2" (click)="toggle()"><i class="fa fa-bars"></i></button>
+
+    </div>
+    
+    <hr>
+    <ng-container *ngIf="show">
+
+        <div style="background-color: #000; margin: 0 auto; text-align: center; display: inline-block; position: relative; width: 100%;">
+            <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+            <br>
+            <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+            <br>
+            <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+            <br>
+            <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        </div>
+
+    </ng-container>

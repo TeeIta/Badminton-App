@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Hero{
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+.grid-cards{
+    display: grid; 
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    grid-gap: 25px;
+    margin: 0 auto; 
+    width: 60%;
+}
+
+.grid-cards .winner{
+    width: fit-content;
+    block-size: fit-content;
+}
+
+.grid-cards a{
+    border: 1px solid #c2c2c2; 
+    background: #e2e2e2;
+    border-radius: 3px;
+    height: 100px;
+    width: 250px;
+}
+
+.grid-cards a:hover{
+    border: none; 
+    background: #d4d4d4;
+}
+
+.grid-cards a sub{
+    font-size: 20px;
+}
+
+.Hero .container{
+    border: 2px solid #000;
+}
+
+.grid-cards .winner img{
+    position: relative;
+    height: 200px;
+}
+
+ .calender{
+    width: 100%;
+}
+
+.calender button{
+    width: 100%;
+    padding: 5px 250px 5px 10px;
+    text-align: left;
+}

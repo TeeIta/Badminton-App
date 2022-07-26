@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Hero{
+    width: 90%;
+    padding-left: 20%;  
+    font-family: 'Poppins', sans-serif;
+}
+
+.Hero .add_new{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Hero .add_new .btn_add{
+    float: right;
+}
+
+.Hero .add_new input{
+    width: 100%;
+    border-radius: 3px;
+    padding: 9px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-left: 20px;
+    box-shadow: 9px 9px 28px -5px #0101053a; 
+    border: 1px solid #ccc;
+}
+
+
+.Hero form{
+    margin: 0 auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+.btn{
+    padding: 3px 30px 3px 30px;
+}
+
+label{
+    font-size: 12px;
+}
+
+.Hero form input{
+    width: 100%;
+    border-radius: 3px;
+    padding: 9px;
+    padding-left: 20px;
+    margin-top: 30px;
+    box-shadow: 9px 9px 28px -5px rgba(1, 1, 5, 0.226); 
+    border: 1px solid #ccc;
+}
+
+.Hero form button{
+    width: 100%;
+    border-radius: 3px;
+    padding: 9px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background: green;
+    box-shadow: 9px 9px 28px -5px rgba(1, 1, 5, 0.226);
+}
+
+.Hero form button:hover{
+    box-shadow: 9px 9px 28px -5px rgba(1,1,5,0.73);
+}
+
+.Hero form button .next{
+    margin-bottom: 20px;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+.Hero form button i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+table {
+    margin-top: 30px;
+}
+
+td .fa-trash{
+    margin-left: 15px;
+}

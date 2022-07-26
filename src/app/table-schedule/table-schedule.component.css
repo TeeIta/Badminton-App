@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.schedule-table{
+    padding: 30px;
+    margin: 0 auto;
+    width: 80%;
+}

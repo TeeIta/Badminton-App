@@ -1,0 +1,21 @@
+<div class="schedule-table">
+    <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Day(s)</th>
+                </tr>
+            </thead>
+            <!-- Monday schedule -->
+            <tbody>
+                <tr *ngFor="let entry of entries">
+                    <button (click)="toggle(entry.id)">
+                        <td scope="col">{{ entry.day }}</td>
+                    </button>
+                    <ng-container *ngIf="show && selectedEntryId == entry.id">
+                        <p>{{ entry.info }}</p>
+                    </ng-container>
+                </tr>
+            </tbody>
+            <!-- Tuesday schedule -->
+    </table>
+</div>

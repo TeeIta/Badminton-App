@@ -1,0 +1,96 @@
+<div class="Hero">
+    <div class="landing">
+        <h4>WORK HARDER, GET STRONGER</h4>
+        <h2>BADMINTON TOURNAMENT<b> MANAGEMENT</b></h2>
+        
+        <button>Learn <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="hero-about">
+        <h2>About Us</h2>
+        <p>Check out our programs</p>
+
+        <div class="about-grid">
+            <div>
+                <img src="/assets/ABCIN.png">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+            </div>
+
+            <div>
+                <img src="/assets/ABCIN.png">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+            </div>
+
+            <div>
+                <img src="/assets/ABCIN.png">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+            </div>
+
+            <div>
+                <img src="/assets/ABCIN.png">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+            </div>
+    </div>
+ 
+    <div class="hero-category">
+        <h2>Our Category</h2>
+        <div class="sub-category">
+            <div *ngFor="let category of categories" class="grid-position">
+                <button (click)="toggle(category.id)">
+                    <div scope="col">{{ category.day }}</div>
+                </button>
+
+                <ng-container *ngIf="show && landingCategoryId == category.id" class="category-display">
+                    <div>{{ category.id }}
+                    <img src="/assets/1Picture.jpg">
+                    <button>Next</button>
+                </div>
+                </ng-container>
+
+            </div>
+        </div>
+        
+    </div> 
+
+    <div>
+        <h2>Our Teams</h2>
+        <div class="hero-experts">
+            <div>
+                <img src="/assets/Cards3.jpg">
+                <p>
+                    Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.
+                </p>
+                <button>Hello</button>
+            </div>
+
+            <div>
+                <img src="/assets/Cards3.jpg">
+                <p>
+                    Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.
+                </p>
+                <button>Hello</button>
+            </div>
+
+            <div>
+                <img src="/assets/Cards3.jpg">
+                <p>
+                    Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.
+                </p>
+                <button>Hello</button>
+            </div>
+    </div>
+
+    <div class="footer-area">
+        
+    </div>
+
+</div>
+

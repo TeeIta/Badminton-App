@@ -1,0 +1,80 @@
+<div class="Hero col-9">
+
+     <!-- add player  -->
+    <div class="add_new">
+
+        <button class="btn btn_add" (click)="toggle()"><i class="fa fa-plus-square-o"></i></button>
+        <input placeholder="Add Player">
+
+    </div>
+<hr>
+<ng-container *ngIf="show">
+
+     <!-- main form  -->
+     <form  [formGroup]="newPlayer" id="form" >
+
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="First name" formControlName="firstName"  required [class.is-invalid]="newPlayerFormControls['firstName'].invalid && newPlayerFormControls['firstName'].touched || newPlayerFormControls['firstName'].dirty" name="firstName" id="firstName">
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Email" formControlName="email" required [class.is-invalid]="newPlayerFormControls['email'].invalid && newPlayerFormControls['email'].touched || newPlayerFormControls['email'].dirty" name="email" id="email">
+        </div>
+        
+
+        <div class="form-group">
+            <input type="name" class="form-control" placeholder="Club" formControlName="club" required [class.is-invalid]="newPlayerFormControls['club'].invalid && newPlayerFormControls['club'].touched || newPlayerFormControls['club'].dirty" name="club" id="club">
+        </div>
+
+        <div class="form-group">
+            <input type="date" class="form-control" placeholder="d.o.b" formControlName="DOB" required [class.is-invalid]="newPlayerFormControls['DOB'].invalid && newPlayerFormControls['DOB'].touched || newPlayerFormControls['DOB'].dirty" name="DOB" id="DOB">
+        </div> 
+
+        <!-- <div class="form-group">
+            <label>Gender</label>
+            <input type="radio" class="form-control">
+        </div>  -->
+
+         <div class="form-group">
+            <input type="file" class="form-control" placeholder="Add image">
+        </div>
+
+        <div class="form-group">
+            <button class="next" type="button" class="form-control" (click)="create()" [disabled]="newPlayer.invalid">Next <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+        </div>
+
+    </form>
+</ng-container>
+
+
+    <div class="container" style="margin: 0 auto;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">S/N</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Club</th>
+                    <th scope="col">d.o.b</th>
+                    <th scope="col">Edit</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let Player of Players">
+                <tr>
+                    <td scope="col">{{Player.order}}</td>
+                    <td scope="col">{{Player.firstName}}</td>
+                    <td scope="col">{{Player.email}}</td>
+                    <td scope="col">{{Player.club}}</td>
+                    <td scope="col">{{Player.DOB}}</td>
+                    <td scope="col">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div> 
+
+

@@ -1,0 +1,14 @@
+.main_btn{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-left: 120px;
+}
+
+.main_btn .btn2{
+    float: right;
+}
+
+.btn{
+    padding: 3px 30px 3px 30px;
+}
