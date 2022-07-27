@@ -1,0 +1,25 @@
+{
+    "data":{
+        "players":[
+        {
+            "id": "1",
+            "name": "Tee",
+            "email": "teeita@gmail.com",
+            "gender": "",
+            "club": "Success",
+            "dob": "mm/dd/yyyy",
+            "passport": ""
+        },
+        
+        {
+            "id": "1",
+            "name": "Tee",
+            "email": "teeita@gmail.com",
+            "gender": "",
+            "club": "Success",
+            "dob": "mm/dd/yyyy",
+            "passport": ""
+        }
+                ]
+    }
+}

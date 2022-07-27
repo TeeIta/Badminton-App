@@ -1,14 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .main_btn{
-    width: 80%;
+    display: flex;
+    width: 70%;
     margin: 0 auto;
-    padding-top: 15px;
-    padding-left: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 140px;
 }
 
 .main_btn .btn2{
-    float: right;
+    margin-left: 700px;
 }
 
 .btn{
     padding: 3px 30px 3px 30px;
+}
+
+.main_btn .icons{
+    font-size: 30px;
+    color: #022e00;
+}
+
+.nav-links a{
+   margin: 0 auto; 
+   text-align: center; 
+   display: inline-block; 
+   text-decoration: none;
+   position: relative; 
+   background: #022e00;
+   color: #fff;
+   width: 100%;
+   padding: 30px;
+   font-size: 20px;
+}
+
+.nav-links a:hover{
+    background: #011600;
 }

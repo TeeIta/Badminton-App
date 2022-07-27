@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "badminton:server": "nodemon server/data/sever.js --ext js, json, html"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "bootstrap": "^5.2.0",
+    "json-server": "^0.17.0",
+    "nodemon": "^2.0.19",
     "rxjs": "~7.5.0",
     "table-schedule": "^0.4.0",
     "tslib": "^2.3.0",
@@ -36,6 +39,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "the-fake-backend": "^3.12.0",
     "typescript": "~4.6.2"
   }
 }
