@@ -6,9 +6,8 @@
         <button>Learn <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
     </div>
 
-    <div class="hero-about">
+    <div class="hero-about" id="about">
         <h2>About Us</h2>
-        <p>Check out our programs</p>
 
         <div class="about-grid">
             <div>
@@ -40,11 +39,23 @@
             </div>
     </div>
  
-    <div class="hero-category">
+
+    <div>
+        <app-category></app-category>
+    </div>
+    <!-- <div class="hero-category">
         <h2>Our Category</h2>
+
         <div class="sub-category">
             <div *ngFor="let category of categories" class="grid-position">
-                <button (click)="toggle(category.id)">
+                
+                <button><i class="fa fa-envelope" (click)="toggle(category.id)">view</i></button>
+                
+                <ng-container *ngIf="show">
+                    <img src="/assets/1Picture.jpg">
+                </ng-container> -->
+
+                <!-- <button (click)="toggle(category.id)">
                     <div scope="col">{{ category.day }}</div>
                 </button>
 
@@ -53,14 +64,14 @@
                     <img src="/assets/1Picture.jpg">
                     <button>Next</button>
                 </div>
-                </ng-container>
+                </ng-container> -->
 
-            </div>
+            <!-- </div>
         </div>
         
-    </div> 
+    </div>  -->
 
-    <div>
+    <div id="teams">
         <h2>Our Teams</h2>
         <div class="hero-experts">
             <div>
@@ -68,7 +79,7 @@
                 <p>
                     Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.
                 </p>
-                <button>Hello</button>
+                <button type="submit" class="btn btn-success">Hello</button>
             </div>
 
             <div>
@@ -76,7 +87,7 @@
                 <p>
                     Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.
                 </p>
-                <button>Hello</button>
+                <button type="submit" class="btn btn-success">Hello</button>
             </div>
 
             <div>
@@ -84,12 +95,33 @@
                 <p>
                     Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.
                 </p>
-                <button>Hello</button>
+                <button type="submit" class="btn btn-success">Hello</button>
             </div>
     </div>
 
     <div class="footer-area">
         
+    </div>
+
+    <div class="main-visibility" style="margin-top: 50px;" id="contact">
+        <div class="visibilty-chart">
+            <div>
+                <sup>0</sup>
+                <h6>Registered Players</h6>
+            </div>
+            <div>
+                <sup>0</sup>
+                <h6>Accredited Coaches</h6>
+            </div>
+            <div>
+                <sup>0</sup>
+                <h6>State Associations</h6>
+            </div>
+            <div>
+                <sup>0</sup>
+                <h6>Board Members</h6>
+            </div>
+        </div>
     </div>
 
 </div>

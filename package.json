@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "badminton:server": "nodemon server/data/sever.js --ext js, json, html"
+    "badminton:server": "nodemon server/sever.js --ext js, json, html"
   },
   "private": true,
   "dependencies": {

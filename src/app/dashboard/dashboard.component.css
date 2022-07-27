@@ -44,6 +44,16 @@
 }
 
 .grid-cards a sub{
+    font-weight: 800;
+    margin-left: 5px;
+    padding-top: 22px;
+    font-size: 15px;
+}
+
+.grid-cards a h5{
+    font-weight: light;
+    margin-left: 59px;
+    padding-top: 15px;
     font-size: 20px;
 }
 
@@ -67,7 +77,8 @@
 }
 
 .contain-div{
-    display: flex;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     padding-left: 18%;
     padding-top: 5%;
@@ -84,7 +95,7 @@
 .notifications{
     width: 1000px;
     padding: 20px;
-    margin-left: 50px;
+    margin-left: 20px;
     border-radius: 1.2rem;
     box-shadow: 0 3px 30px rgb(0 0 0 / 10%), 0 3px 20px rgb(0 0 0 / 10%);
 }

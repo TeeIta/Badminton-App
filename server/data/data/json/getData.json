@@ -15,7 +15,7 @@
             "id": "1",
             "name": "Tee",
             "email": "teeita@gmail.com",
-            "gender": "",
+            "gender": "female",
             "club": "Success",
             "dob": "mm/dd/yyyy",
             "passport": ""

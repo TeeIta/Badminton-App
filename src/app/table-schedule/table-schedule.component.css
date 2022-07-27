@@ -6,5 +6,51 @@
 .schedule-table{
     padding: 30px;
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: url(/src/assets/Background.jpg);
+}
+
+tr{
+    display: flex;
+}
+
+tbody button{
+    display: flex;
+    border: none;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 15px;
+    padding: 20px 15px 20px 30px;
+    border-radius: 5px;
+    background: #022e00;
+    box-shadow: 0 3px 30px rgb(0 0 0 / 10%), 0 3px 20px rgb(0 0 0 / 10%);
+    border-radius: 1.1rem;
+}
+
+tbody button i{
+    margin-right: 10px;
+    padding: 3px 7px 3px 5px;
+}
+
+tbody p{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px 200px 20px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 30px rgb(0 0 0 / 10%), 0 3px 20px rgb(0 0 0 / 10%);
+    border-radius: 1.1rem;
+}
+
+tbody b{
+    width: 100px;
+    margin-top: 20px;
+    padding: 20px 200px 20px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 30px rgb(0 0 0 / 10%), 0 3px 20px rgb(0 0 0 / 10%);
+    border-radius: 1.1rem;
 }

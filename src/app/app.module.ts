@@ -14,6 +14,7 @@ import { TableScheduleComponent } from './table-schedule/table-schedule.componen
 import { ScheduleTreeComponent } from './schedule-tree/schedule-tree.component';
 import { LandingComponent } from './landing/landing.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     TableScheduleComponent,
     ScheduleTreeComponent,
     LandingComponent,
-    DashboardComponent
+    DashboardComponent,
+    CategoryComponent
   ],
   imports: [ 
     BrowserModule,

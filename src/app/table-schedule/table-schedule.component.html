@@ -8,11 +8,14 @@
             <!-- Monday schedule -->
             <tbody>
                 <tr *ngFor="let entry of entries">
-                    <button (click)="toggle(entry.id)">
+                    <button (click)="toggle(entry.id)" class="btn btn-success">
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                         <td scope="col">{{ entry.day }}</td>
                     </button>
-                    <ng-container *ngIf="show && selectedEntryId == entry.id">
+                    <ng-container *ngIf="show && selectedEntryId == entry.id" class="display-details">
                         <p>{{ entry.info }}</p>
+                        <b>{{ entry.data }}</b>
+                        <i></i>
                     </ng-container>
                 </tr>
             </tbody>
